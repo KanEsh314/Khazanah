@@ -1,14 +1,41 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="nav">
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="newfeeds">
+
+	<ion-card>
+
+  	<ion-item>
+    	<ion-avatar item-start>
+      		<img src="assets//hipster.jpg">
+    	</ion-avatar>
+    		<h2>Kanesh</h2>
+    		<p>November 4, 1996</p>
+  </ion-item>
+
+  <img src="assets/bg/bg.jpg">
+
+  <ion-card-content>
+    <p>
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+  </ion-card-content>
+
+</ion-card>
+
+  <ion-fab bottom right>
+    <button ion-fab color="secondary"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="getSocial()"><ion-icon name="ios-chatbubbles"></ion-icon></button>
+      <button ion-fab (click)="getCalender()"><ion-icon name="ios-calendar"></ion-icon></button>
+      <button ion-fab (click)="getReport()"><ion-icon name="ios-paper"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>

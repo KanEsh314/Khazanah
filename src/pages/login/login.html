@@ -1,0 +1,25 @@
+<ion-content padding>
+
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      APP_NAME
+    </div>
+  </div>
+
+  <div padding>
+
+  	<ion-item>
+  		<ion-input type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
+  	</ion-item>
+
+  	<ion-item>
+  		<ion-input type="password" placeholder="Password" [(ngModel)]="email"></ion-input>
+  	</ion-item>
+
+    <!-- <button ion-button block (click)="signup()">SIGNUP</button> -->
+    <button ion-button block (click)="getLogin()">LOGIN</button>
+  </div>
+
+</ion-content>
