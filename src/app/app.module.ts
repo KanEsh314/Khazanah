@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { CalenderPage } from '../pages/calender/calender';
 import { ReportPage } from '../pages/report/report';
 import { SocialPage } from '../pages/social/social';
+import { NewFeedPage } from '../pages/new-feed/new-feed';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SocialPage } from '../pages/social/social';
     LoginPage,
     CalenderPage,
     ReportPage,
-    SocialPage
+    SocialPage,
+    NewFeedPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { SocialPage } from '../pages/social/social';
     LoginPage,
     CalenderPage,
     ReportPage,
-    SocialPage
+    SocialPage,
+    NewFeedPage
   ],
   providers: [
     StatusBar,

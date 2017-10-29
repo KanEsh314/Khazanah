@@ -3,6 +3,7 @@ import { NavController, ModalController } from 'ionic-angular';
 import { CalenderPage } from '../calender/calender';
 import { ReportPage } from '../report/report';
 import { SocialPage } from '../social/social';
+import { NewFeedPage } from '../new-feed/new-feed';
 
 @Component({
   selector: 'page-home',
@@ -19,11 +20,15 @@ export class HomePage {
   }
 
   getReport(){
-  	//this.modalCtrl.create(ReportPage).present();
+  	this.modalCtrl.create(ReportPage).present();
   }
 
   getSocial(){
-  	//this.modalCtrl.create(SocialPage).present();
+  	this.modalCtrl.create(SocialPage).present();
+  }
+
+  getNew(){
+    this.modalCtrl.create(NewFeedPage).present();
   }
 
 }
