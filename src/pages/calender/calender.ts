@@ -16,11 +16,22 @@ import { Calendar } from '@ionic-native/calendar';
 })
 export class CalenderPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  startDate: Date;
+  calender : any;
+
+  constructor(public calendar: Calendar ,public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
-    //console.log('ionViewDidLoad CalenderPage');
+      this.calendar.createCalendar('MyCalendar').then((msg) => { 
+        console.log(msg);
+        this.calendar = msg; 
+      },(err) => { 
+        console.log(err); 
+      }
+    );
+
+    this.calendar.openCalendar(this.startDate);
   }
 
   getClose(){

@@ -12,6 +12,9 @@ import { ReportPage } from '../pages/report/report';
 import { SocialPage } from '../pages/social/social';
 import { NewFeedPage } from '../pages/new-feed/new-feed';
 
+import { Calendar } from '@ionic-native/calendar';
+import { Camera } from '@ionic-native/camera';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -39,6 +42,8 @@ import { NewFeedPage } from '../pages/new-feed/new-feed';
   providers: [
     StatusBar,
     SplashScreen,
+    Calendar,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
